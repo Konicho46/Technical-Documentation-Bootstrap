@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bootstrap Documentation</title>
+</head>
+
+<body>
+  <header id="main-header">
+    <nav id="navbar">
+      <header>
+      <h1>Bootstrap Technical Documentation</h1>
+      </header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#what_you_should_already_know">What you should already know</a></li>
+        <li><a class="nav-link" href="#bootstrap_vs_tailwind">Bootstrap vs Tailwind</a></li>
+        <li><a class="nav-link" href="#layouting">Layouting</a></li>
+        <li><a class="nav-link" href="#content">Content</a></li>
+        <li><a class="nav-link" href="#components">Components</a></li>
+        <li><a class="nav-link" href="#utilities">Utilities</a></li>
+        <li><a class="nav-link" href="#grid_system">Grid System</a></li>
+        <li><a class="nav-link" href="#history_of_bootstrap">History of Bootstrap</a></li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <article class="main-article">
+        <p>Bootstrap 5 is a popular front-end framework that provides a comprehensive set of tools and components for building responsive and mobile-first websites and web applications. It is the latest version of Bootstrap, released in May 2021.</p>
+        <ul>
+          <li>Mobile-First Approach: Bootstrap 5 follows a mobile-first approach, which means it prioritizes designing for mobile devices and then progressively enhances the layout for larger screens.</li>
+          <li>Smaller File Size: Compared to its previous version (Bootstrap 4), Bootstrap 5 has a smaller file size due to the removal of jQuery as a dependency. It utilizes vanilla JavaScript, resulting in faster loading times.</li>
+          <li>Improved Grid System: Bootstrap's grid system allows for easy creation of responsive layouts. Bootstrap 5 enhances the grid system by introducing a new grid tier (xxl) and adding utility classes for better control over column width and positioning.</li>
+          <li>Customizable and Modular: Bootstrap 5 is highly modular, allowing developers to pick and choose the components they need and customize them according to their project requirements. This approach helps in reducing unnecessary code bloat.</li>
+          <li>Improved Documentation: The documentation for Bootstrap 5 is comprehensive and well-organized, making it easier for developers to find the information they need. It includes code examples, usage guidelines, and explanations of each component and utility class.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="what_you_should_already_know">
+      <header>What you should already know</header>
+      <article class="main-article">
+        <p>As a framework, Bootstrap is a collection of pre-written code chunks in CSS, HTML, and JavaScript that allows developers to create websites more quickly than if they had to create every bit of code from scratch. Bootstrap saves developers time so that they can focus on other things rather than coding CSS.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="bootstrap_vs_tailwind">
+      <header>Bootstrap vs Tailwind</header>
+      <article class="main-article">
+        <p>Tailwind CSS and Bootstrap are both popular front-end frameworks used for building responsive websites and web applications. While they share some similarities, there are also significant differences between the two. Here's a comparison of Tailwind CSS and Bootstrap:</p>
+        <p>Choosing between Tailwind CSS and Bootstrap depends on your specific project requirements, design preferences, and development workflow. If you prefer a ready-made UI kit with predefined components and a simpler workflow, Bootstrap may be a good choice. On the other hand, if you value flexibility, customization, and have the time and willingness to build your own designs from scratch, Tailwind CSS offers more control and creative possibilities.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="layouting">
+      <header>Layouting</header>
+      <article class="main-article">
+        <li>Containers</li>
+        <p>Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Choose from a responsive, fixed-width container (meaning its max-width changes at each breakpoint) or fluid-width (meaning it’s 100% wide all the time).</p>
+        <code> div class="container"</code>
+        <code> div class="container-fluid"</code>
+      </article>
+    </section>
+
+    <section class="main-section" id="content">
+      <header>Content</header>
+      <article class="main-article">
+        <li>Headings</li>
+        <p>All heading elements—e.g., h1—and p are reset to have their margin-top removed. Headings have margin-bottom: .5rem added and paragraphs margin-bottom: 1rem for easy spacing.</p>
+        <li>Lists</li>
+        <p>All lists — ul , ol, and dl — have their margin-top removed and a margin-bottom: 1rem. Nested lists have no margin-bottom.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="components">
+      <header>Components</header>
+      <article class="main-article">
+        <li>Alerts</li>
+        <code>div class="alert alert-primary" role="alert"</code>
+        <code>div class="alert alert-secondary" role="alert"</code>
+        <code>div class="alert alert-success" role="alert"</code>
+        <code>div class="alert alert-success" role="alert"</code>
+        <code>div class="alert alert-warning" role="alert"</code>
+        <code>div class="alert alert-info" role="alert"</code>
+        <code>div class="alert alert-light" role="alert"</code>
+        <code>div class="alert alert-dark" role="alert"</code>
+      </article>
+    </section>
+
+    <section class="main-section" id="utilities">
+      <header>Utilities</header>
+      <article class="main-article">
+        <li>Border</li>
+        <code>
+          span class="border"</code>
+<code>span class="border-top"</code>
+<code>span class="border-right"</code>
+<code>span class="border-bottom"</code>
+<code>span class="border-left"</code>
+        </code>
+        <li>Shadow</li>
+        <code>div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</code>
+<code>div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</code>
+<code>div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</code>
+<code>div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</code>
+        
+      </article>
+    </section>
+
+    <section class="main-section" id="grid_system">
+      <header>Grid System</header>
+      <article class="main-article">
+        <p>Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+        <li>
+          Containers provide a means to center and horizontally pad your site’s contents. Use .container for a responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.
+        </li>
+        <li>
+          Thanks to flexbox, grid columns without a specified width will automatically layout as equal width columns. For example, four instances of .col-sm will each automatically be 25% wide from the small breakpoint and up. See the auto-layout columns section for more examples.
+        </li>
+        <li>
+          Thanks to flexbox, grid columns without a specified width will automatically layout as equal width columns. For example, four instances of .col-sm will each automatically be 25% wide from the small breakpoint and up. See the auto-layout columns section for more examples.
+        </li>
+        <code>
+          div class="container"
+          <code>
+            div class="row"
+            <code>
+              div class="col-sm"
+            </code>
+          </code>
+        </code>
+      </article>
+    </section>
+
+    <section class="main-section" id="history_of_bootstrap">
+      <header>History of Bootstrap</header>
+      <article class="main-article">
+        <p>Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world.</p>
+        <p>Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior to being an open-sourced framework, Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week and the project exploded as developers of all skill levels jumped in without any external guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today.</p>
+        <p>
+          Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior to being an open-sourced framework, Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week and the project exploded as developers of all skill levels jumped in without any external guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today.
+        </p>
+        <p>
+          Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior to being an open-sourced framework, Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week and the project exploded as developers of all skill levels jumped in without any external guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="reference">
+      <header>Reference</header>
+      <article class="main-article">
+        <ul>
+          <li>All the documentation in this page is taken from <a
+              href="https://getbootstrap.com/">GetBootstrap</a></li>
+        </ul>
+      </article>
+    </section>
+    <p id="creator">This Web created by <a href="https://www.instagram.com/konicho.46/">Nicholas Nathanael Suhendar</a></p>
+  </main>
+</body>
+
+</html>
